@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Portal Segurança — NR-06</title>
+<meta name="description" content="Portal Segurança: treinamentos admissional e periódico, treinamento por área, EPIs da NR-06, DDS, comunicados e suporte.">
+<meta name="theme-color" content="#004a8f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛑️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap">
+<style>
+:root{--azul:#004a8f;--azul-esc:#00305f;--azul-cl:#e8f0f9;--vermelho:#e30613;--fundo:#f1f4f8;--linha:#d9e0ea;--texto:#1c2b3d;--suave:#566478;--sf:#fff;--topo:#004a8f;--btn:#004a8f;--btn-t:#fff}
+html.contraste{--azul:#ffd400;--azul-esc:#fff;--azul-cl:#1a1a1a;--fundo:#000;--linha:#fff;--texto:#fff;--suave:#e6e6e6;--vermelho:#ff6b6b;--sf:#000;--topo:#000;--btn:#ffd400;--btn-t:#000}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Open Sans','Segoe UI',Roboto,Arial,sans-serif}
+body{background:var(--fundo);color:var(--texto);line-height:1.5;padding-bottom:86px;min-height:100vh;display:flex;flex-direction:column}
+body.trava{overflow:hidden}.hidden{display:none!important}
+.in{max-width:880px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-9999px;top:0;background:#fff;color:#00305f;padding:10px 16px;font-weight:700;z-index:100}.skip:focus{left:0}
+.topo{position:sticky;top:0;z-index:20;background:var(--topo);color:#fff;border-bottom:4px solid var(--vermelho)}
+.topo .in{display:flex;align-items:center;gap:12px;height:58px}
+.marca{display:flex;align-items:center;gap:9px}.marca::before{content:'';width:5px;height:24px;background:var(--vermelho)}
+.marca-nome{font-size:1.35rem;font-weight:800;letter-spacing:.04em;line-height:1}
+.topo-t{flex:1;min-width:0;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:#fff;border-left:1px solid rgba(255,255,255,.45);padding-left:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.btn-aa,.voltar{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:10px;height:42px;min-width:50px;padding:0 14px;font-weight:700;font-size:1rem;cursor:pointer}
+.acess-p{position:absolute;right:16px;top:62px;background:var(--sf);color:var(--texto);border:1px solid var(--linha);border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,48,95,.25);display:flex;flex-direction:column;gap:10px;min-width:240px}
+.acess-p .lin{display:flex;gap:8px}.acess-p b{font-size:.8rem;color:var(--suave)}
+.acess-p button{flex:1;height:44px;border:1px solid var(--linha);background:var(--sf);color:var(--texto);border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer}
+.acess-p button:disabled{opacity:.4}.acess-p button[aria-pressed="true"]{background:var(--btn);color:var(--btn-t)}
+main{flex:1;width:100%;max-width:880px;margin:0 auto;padding:0 16px}
+.pagina{display:none;padding-top:18px}.pagina.on{display:block}
+.ph h1{font-size:1.55rem;line-height:1.2;color:var(--azul-esc)}.ph p{color:var(--suave);margin:6px 0 16px}
+.banner{background:var(--topo);color:#fff;border-radius:16px;padding:24px 22px;margin-bottom:18px}
+.banner h1{font-size:1.5rem;line-height:1.25}.banner p{margin-top:8px;color:#d6e4f5}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{display:flex;flex-direction:column;gap:10px;background:var(--sf);border:1px solid var(--linha);border-radius:16px;padding:16px;min-height:130px;text-decoration:none;color:var(--texto);text-align:left;cursor:pointer;font:inherit;width:100%;box-shadow:0 2px 6px rgba(0,48,95,.06);transition:transform .15s,box-shadow .15s}
+.tile:hover{box-shadow:0 6px 16px rgba(0,48,95,.14)}.tile:active{transform:scale(.98)}
+.tile i{font-style:normal;font-size:1.6rem;width:48px;height:48px;border-radius:12px;background:var(--azul-cl);display:flex;align-items:center;justify-content:center}
+.tile strong{color:var(--azul-esc);font-size:1.02rem;line-height:1.2}.tile span{font-size:.82rem;color:var(--suave);line-height:1.35}
+.sub-t{font-size:1.05rem;color:var(--azul-esc);margin:26px 0 10px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:var(--sf);border:1px solid var(--azul);color:var(--azul);border-radius:999px;padding:11px 18px;font-weight:700;font-size:.92rem;text-decoration:none}
+.ck{list-style:none;background:var(--sf);border:1px solid var(--linha);border-radius:16px;overflow:hidden;margin-bottom:14px}
+.ck li{padding:14px 16px 14px 52px;position:relative;border-top:1px solid var(--linha);font-size:.94rem;line-height:1.55}.ck li:first-child{border-top:none}
+.ck li::before{content:'✓';position:absolute;left:14px;top:14px;width:24px;height:24px;border-radius:50%;background:var(--vermelho);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.ck strong{color:var(--azul-esc)}
+.seg{display:flex;gap:8px;overflow-x:auto;padding:2px 0 14px;scrollbar-width:none}
+.seg button{flex:0 0 auto;background:var(--sf);border:1px solid var(--linha);color:var(--suave);border-radius:999px;padding:11px 18px;font-weight:700;font-size:.92rem;cursor:pointer;white-space:nowrap}
+.seg button[aria-selected="true"]{background:var(--btn);color:var(--btn-t);border-color:var(--btn)}
+.dois{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:6px}
+.info{background:var(--azul-cl);border-radius:12px;padding:12px 14px;font-size:.92rem;line-height:1.5}.info b{display:block;font-size:.76rem;color:var(--suave);margin-bottom:2px}
+.tp{display:none}.tp.on{display:block}
+.acc{background:var(--sf);border:1px solid var(--linha);border-radius:14px;margin-bottom:10px}
+.acc summary{padding:16px 18px;font-weight:700;color:var(--azul-esc);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.acc summary::-webkit-details-marker{display:none}.acc summary::after{content:'+';font-size:1.4rem;line-height:1;color:var(--azul)}.acc[open] summary::after{content:'−'}
+.acc .corpo{padding:0 18px 16px;line-height:1.65}.acc ul,.acc ol{padding-left:20px}.acc li{margin-bottom:6px}
+.nota{font-size:.85rem;color:var(--suave);margin:4px 0 14px}
+.tarja{background:#fff8e1;color:#4a3b00;border:1px solid #f0d58a;border-left:5px solid #f2b705;border-radius:12px;padding:12px 14px;margin-bottom:16px;font-size:.9rem}
+.aviso{margin-top:18px;padding:12px 14px;background:var(--azul-cl);border-left:4px solid var(--azul);border-radius:10px;font-size:.88rem}
+.epi-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.epi-card{--c:#004a8f;appearance:none;background:var(--sf);color:var(--texto);border:1px solid var(--linha);border-radius:16px;padding:22px 8px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;text-align:center;position:relative;overflow:hidden;width:100%;min-height:150px;font-size:1rem}
+.epi-card::before{content:'';position:absolute;inset:0 0 auto;height:5px;background:var(--c)}.epi-card:active{transform:scale(.98)}
+.epi-card .icon{font-size:1.9rem;width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:var(--azul-cl)}
+@supports(background:color-mix(in srgb,red 10%,white)){.epi-card .icon{background:color-mix(in srgb,var(--c) 13%,var(--sf))}}
+.epi-card .title{font-size:.92rem;font-weight:700;line-height:1.25}.epi-card .risco-tag{order:3;font-size:.72rem;font-weight:700;color:var(--c)}
+.epi-card[data-risco="fisico"]{--c:#2e7d32}.epi-card[data-risco="quimico"]{--c:#c62828}.epi-card[data-risco="biologico"]{--c:#6d4c41}.epi-card[data-risco="mecanico"]{--c:#1565c0}.epi-card[data-risco="multiplo"]{--c:#6a1b9a}
+html.contraste .epi-card .risco-tag{color:#fff}
+.painel{display:none;position:fixed;inset:0;z-index:30;background:var(--fundo);overflow-y:auto}.painel.aberto{display:block}
+.p-top{position:sticky;top:0;z-index:2;background:var(--topo);color:#fff;border-bottom:4px solid var(--cor-risco,var(--vermelho))}
+.p-top .in{display:flex;align-items:center;gap:12px;height:58px}.p-top strong{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.p-corpo{max-width:880px;margin:0 auto;padding:18px 16px 120px}
+.d-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.icone-grande{font-size:2.2rem;width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:var(--azul-cl)}
+.d-head h2{flex:1;min-width:160px;font-size:1.35rem;line-height:1.2;color:var(--azul-esc)}
+.risco-badge{padding:5px 14px;border-radius:999px;font-weight:700;color:#fff;font-size:.8rem}
+.d-desc{line-height:1.65;margin-bottom:14px}
+.topico-conteudo{background:var(--sf);border:1px solid var(--linha);border-left:5px solid var(--cor-risco,var(--azul));border-radius:12px;padding:16px 18px;line-height:1.7;min-height:130px;margin-bottom:18px}
+.topico-conteudo h3{font-size:1.05rem;color:var(--azul-esc);margin-bottom:8px}.topico-conteudo ul{padding-left:20px}.topico-conteudo li{margin-bottom:6px}
+.btn-video{display:flex;justify-content:center;align-items:center;gap:10px;background:var(--btn);color:var(--btn-t);padding:15px 22px;border-radius:12px;font-weight:700;text-decoration:none;border:none;width:100%;font-size:1rem;cursor:pointer}
+.abas-baixo{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--sf);border-top:1px solid var(--linha);box-shadow:0 -4px 16px rgba(0,48,95,.1);display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom,0)}
+.abas-baixo>*{flex:1;max-width:170px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 2px 8px;background:none;border:none;border-top:3px solid transparent;color:var(--suave);text-decoration:none;font:inherit;font-size:.68rem;font-weight:700;cursor:pointer}
+.abas-baixo i{font-style:normal;font-size:1.4rem;line-height:1}.abas-baixo [aria-current="page"]{color:var(--azul-esc);border-top-color:var(--vermelho)}
+.veu{position:fixed;inset:0;background:rgba(0,48,95,.55);z-index:40}
+.gaveta{position:fixed;top:0;right:0;bottom:0;width:min(320px,86vw);background:var(--sf);z-index:50;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;border-top:5px solid var(--vermelho);visibility:hidden;overflow-y:auto}
+.gaveta.aberta{transform:none;visibility:visible}
+.g-top{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--linha);color:var(--azul-esc)}
+.g-top button{background:none;border:none;font-size:1.3rem;color:var(--suave);cursor:pointer;padding:8px 12px}
+.gaveta a,.gaveta .item{padding:17px 22px;color:var(--texto);text-decoration:none;font:inherit;font-weight:600;border:none;border-left:5px solid transparent;border-bottom:1px solid var(--linha);background:none;text-align:left;cursor:pointer}
+.gaveta [aria-current="page"]{border-left-color:var(--vermelho);background:var(--azul-cl);color:var(--azul-esc)}
+.form label{display:block;font-weight:600;font-size:.9rem;margin:12px 0 6px;color:var(--azul-esc)}
+.form input,.form textarea{width:100%;padding:13px;border:1px solid #aab6c6;border-radius:10px;font-size:1rem;background:var(--sf);color:var(--texto)}
+.form textarea{margin-bottom:16px;resize:vertical}
+.doc{background:var(--sf);border:1px solid var(--linha);border-top:6px solid var(--azul);border-radius:12px;padding:24px 20px;line-height:1.7;margin-top:14px}
+.doc p,.doc ul{margin-bottom:14px}.doc ul{padding-left:22px}
+.doc-marca{display:flex;align-items:center;gap:9px;font-size:1.3rem;font-weight:800;letter-spacing:.04em;color:var(--azul);margin-bottom:12px}.doc-marca::before{content:'';width:5px;height:22px;background:var(--vermelho)}
+.doc-n{font-weight:700;color:var(--azul-esc);border-bottom:2px solid var(--vermelho);padding-bottom:8px}
+.doc-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 20px;margin:14px 0 18px;font-size:.92rem}
+.doc-meta dt{font-size:.78rem;font-weight:600;color:var(--suave)}.doc-meta dd{font-weight:600}.assin{margin-top:26px}
+.rodape{text-align:center;color:#5f6368;font-size:.78rem;padding:24px 16px 70px}.rodape p{margin-bottom:8px}
+.lk{background:none;border:none;color:#5f6368;font:inherit;font-size:.78rem;margin:0 8px;cursor:pointer;text-decoration:none}.lk:hover{text-decoration:underline}
+html.contraste .lk,html.contraste .rodape{color:#fff}
+dialog.dlg{border:none;border-top:5px solid var(--vermelho);border-radius:16px;padding:26px 24px;max-width:520px;width:calc(100vw - 32px);margin:auto;background:var(--sf);color:var(--texto)}
+dialog.dlg::backdrop{background:rgba(0,48,95,.6)}.dlg h2{color:var(--azul-esc);font-size:1.3rem;margin-bottom:12px}.dlg p{line-height:1.7;margin-bottom:14px}.dlg .autoria{font-weight:700;color:var(--azul)}
+.dlg-fechar{background:var(--btn);color:var(--btn-t);border:none;border-radius:10px;padding:12px 26px;font-weight:700;font-size:1rem;cursor:pointer}
+:focus-visible{outline:3px solid var(--azul);outline-offset:2px}.topo :focus-visible,.p-top :focus-visible{outline-color:#fff}
+@media(min-width:700px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.epi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media print{body *{visibility:hidden}.doc,.doc *{visibility:visible}.doc{position:absolute;left:0;top:0;width:100%;border:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.areas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.area-b{background:var(--sf);border:1px solid var(--linha);border-radius:14px;padding:16px 6px;min-height:60px;font:inherit;font-size:.98rem;font-weight:700;color:var(--azul-esc);cursor:pointer;overflow-wrap:anywhere}
+.area-b[aria-pressed="true"]{background:var(--btn);color:var(--btn-t);border-color:var(--btn)}
+.area-det{scroll-margin-top:72px;background:var(--sf);border:1px solid var(--linha);border-top:5px solid var(--azul);border-radius:16px;padding:18px}
+.area-det h3{font-size:1.2rem;color:var(--azul-esc);margin-bottom:12px}.area-det .ck{margin-bottom:14px}
+@media(min-width:700px){.areas{grid-template-columns:repeat(4,minmax(0,1fr))}}
+html{scroll-padding-top:72px}
+button,a,summary{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.seg button,.chip{min-height:48px;display:inline-flex;align-items:center}
+.btn-video{min-height:54px}
+.area-b:active,.chip:active,.btn-video:active,.seg button:active,.btn-sec:active{transform:scale(.97)}
+.btn-sec{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;margin-top:10px;background:var(--sf);border:1.5px solid var(--azul);color:var(--azul);border-radius:12px;font:inherit;font-weight:700;font-size:.98rem;cursor:pointer}
+.voz-fab{position:fixed;right:14px;bottom:calc(88px + env(safe-area-inset-bottom,0px));z-index:35;display:flex;align-items:center;gap:8px;min-height:56px;padding:0 20px;border:none;border-radius:999px;background:var(--btn);color:var(--btn-t);font:inherit;font-weight:700;font-size:1rem;box-shadow:0 6px 20px rgba(0,48,95,.35);cursor:pointer}
+.voz-fab.ouvindo{background:var(--vermelho);color:#fff;animation:pulsa 1.2s infinite}
+@keyframes pulsa{from{box-shadow:0 0 0 0 rgba(227,6,19,.55)}to{box-shadow:0 0 0 18px rgba(227,6,19,0)}}
+.voz-p{position:fixed;right:14px;bottom:calc(156px + env(safe-area-inset-bottom,0px));z-index:36;width:min(380px,calc(100vw - 28px));background:var(--sf);color:var(--texto);border:1px solid var(--linha);border-radius:18px;padding:14px;box-shadow:0 14px 40px rgba(0,48,95,.3);display:flex;flex-direction:column;gap:10px}
+.voz-top{display:flex;justify-content:space-between;align-items:center;color:var(--azul-esc)}
+.voz-top button{background:none;border:none;font-size:1.3rem;color:var(--suave);cursor:pointer;padding:6px 10px;min-height:44px}
+.voz-b{display:flex;align-items:center;gap:12px;min-height:56px;padding:10px 14px;background:var(--sf);border:1.5px solid var(--azul);color:var(--azul-esc);border-radius:14px;font:inherit;font-weight:700;cursor:pointer;text-align:left;width:100%}
+.voz-b.pri{background:var(--btn);color:var(--btn-t);border-color:var(--btn)}
+.voz-b .ic{font-size:1.5rem;line-height:1}.voz-b small{display:block;font-size:.78rem;font-weight:400}
+.voz-b.ditar{justify-content:center;min-height:48px;margin:0 0 6px}
+.voz-st{font-size:.88rem;color:var(--suave);min-height:1.4em;line-height:1.4}
+.voz-chips{display:flex;flex-wrap:wrap;gap:8px}
+.voz-chips button{min-height:44px;padding:0 14px;border-radius:999px;background:var(--azul-cl);color:var(--azul-esc);border:1px solid var(--linha);font:inherit;font-weight:700;font-size:.85rem;cursor:pointer}
+.voz-toast{position:fixed;right:14px;bottom:calc(156px + env(safe-area-inset-bottom,0px));z-index:36;max-width:min(380px,calc(100vw - 28px));background:var(--topo);color:#fff;border-radius:12px;padding:11px 15px;font-size:.9rem;box-shadow:0 8px 24px rgba(0,48,95,.3)}
+.voz-fab:focus-visible,.voz-b:focus-visible,.voz-chips button:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+html.contraste .voz-toast{border:2px solid #ffd400}
+.sienna-oculto{display:none!important}
+</style>
+</head>
+<body>
+<div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+<a class="skip" id="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo"><div class="in"><div class="marca"><span class="marca-nome">SENAI</span></div><span class="topo-t" id="topoT">PORTAL SEGURANÇA</span>
+<button class="btn-aa" id="btnAa" type="button" aria-expanded="false" aria-controls="acessP" aria-label="Acessibilidade: tamanho do texto e contraste">Aa</button></div>
+<div class="acess-p hidden" id="acessP"><b>Tamanho do texto</b><div class="lin"><button id="aMenos" type="button" aria-label="Diminuir texto">A−</button><button id="aPadrao" type="button" aria-label="Texto padrão">A</button><button id="aMais" type="button" aria-label="Aumentar texto">A+</button></div><b>Contraste</b><button id="btnContraste" type="button" aria-pressed="false">Alto contraste</button><b>Mais opções</b><button id="btnSienna" type="button" aria-pressed="false">Abrir Sienna</button></div></header>
+<main id="conteudo">
+<section class="pagina on" id="p-inicio">
+<div class="banner"><h1>Portal Segurança</h1><p>Treinamento inteligente para empresas que querem evoluir. Treinamentos e EPIs da NR-06, sempre à mão.</p></div>
+<div class="tiles">
+<a class="tile" href="#treinamentos" data-go="treinamentos"><i>🎓</i><strong>Treinamentos</strong><span>Admissional, periódico e por área</span></a>
+<a class="tile" href="#epi" data-go="epi"><i>🦺</i><strong>EPIs (NR-06)</strong><span>Uso correto e cuidados</span></a>
+<a class="tile" href="#dds" data-go="dds"><i>💬</i><strong>DDS</strong><span>Diálogos de segurança</span></a>
+<a class="tile" href="#comunicados" data-go="comunicados"><i>📄</i><strong>Comunicados</strong><span>Modelo pronto para usar</span></a>
+<a class="tile" href="#suporte" data-go="suporte"><i>🛟</i><strong>Suporte</strong><span>Relate um problema</span></a>
+<button class="tile" id="tileSobre" type="button"><i>ℹ️</i><strong>Sobre o site</strong><span>Objetivo e créditos</span></button>
+</div>
+<h2 class="sub-t">Treinamento rápido</h2>
+<div class="chips"><a class="chip" href="#treinamentos" data-go="treinamentos" data-tab="admissional">Admissional</a><a class="chip" href="#treinamentos" data-go="treinamentos" data-tab="periodico">Periódico</a></div>
+<h2 class="sub-t">Por que usar</h2>
+<ul class="ck"><li><strong>Online e prático.</strong> Capacitação sem esperar acumular colaboradores para formar turma.</li><li><strong>Admissional e periódico.</strong> Cada treinamento com os procedimentos esperados.</li><li><strong>Treinamento por área.</strong> Soldagem, mecânica, usinagem, tornearia, metalografia, costura, marcenaria e elétrica, com apresentação própria.</li><li><strong>Registro e certificado.</strong> Possibilidade de certificação pelo SENAI, mediante parceria e autorização formal.</li></ul>
+</section>
+<section class="pagina" id="p-treinamentos">
+<header class="ph"><h1>Treinamentos</h1><p>Escolha o tipo e veja os procedimentos esperados.</p></header>
+<div class="seg" id="abasTr" role="tablist" aria-label="Tipos de treinamento"><button role="tab" data-t="admissional" aria-selected="true" type="button">Admissional</button><button role="tab" data-t="periodico" aria-selected="false" tabindex="-1" type="button">Periódico</button></div>
+<div class="tp on" id="tp-admissional" role="tabpanel"><div class="dois"><div class="info"><b>Quando acontece</b>Antes de iniciar as atividades.</div><div class="info"><b>Objetivo</b>Apresentar os riscos da função, os EPIs e os procedimentos da área.</div></div><h2 class="sub-t" style="margin-top:16px">Procedimentos esperados</h2><ul class="ck"><li>Realizar o treinamento antes de começar a trabalhar.</li><li>Conhecer os riscos da função e da área de trabalho.</li><li>Receber os EPIs adequados e aprender a usar, guardar e conservar.</li><li>Conferir o CA dos EPIs recebidos.</li><li>Tirar dúvidas com o responsável antes de iniciar.</li><li>Registrar a conclusão e guardar o certificado.</li></ul></div>
+<div class="tp" id="tp-periodico" role="tabpanel"><div class="dois"><div class="info"><b>Quando acontece</b>Em intervalos regulares, conforme a NR aplicável à atividade e a definição da empresa.</div><div class="info"><b>Objetivo</b>Manter o conhecimento atualizado e prevenir acidentes.</div></div><h2 class="sub-t" style="margin-top:16px">Procedimentos esperados</h2><ul class="ck"><li>Respeitar o prazo definido para o seu treinamento.</li><li>Solicitar o treinamento antes de vencer.</li><li>Reforçar os procedimentos de segurança e o uso de EPI.</li><li>Manter o certificado atualizado e disponível.</li></ul></div>
+<h2 class="sub-t" id="hAreas">Treinamento por área</h2>
+<p class="nota">Escolha a área para ver o treinamento e acessar a apresentação.</p>
+<div class="areas" id="areas"></div>
+<div class="area-det hidden" id="areaDet" tabindex="-1">
+<h3 id="areaNome"></h3>
+<div class="dois"><div class="info"><b>Riscos principais</b><span id="areaRiscos"></span></div><div class="info"><b>EPIs usuais</b><span id="areaEpis"></span></div></div>
+<h4 class="sub-t" style="margin-top:16px">Procedimentos esperados</h4>
+<ul class="ck" id="areaProc"></ul>
+<p class="nota hidden" id="areaObs"></p>
+<a class="btn-video" id="btnApres" href="#" target="_blank" rel="noopener noreferrer">Apresentação</a>
+<button class="btn-sec" id="btnOutra" type="button">↑ Escolher outra área</button>
+</div>
+<p class="nota" style="margin-top:12px">Exemplos orientativos: os EPIs e os procedimentos de cada atividade são definidos pela avaliação de riscos da empresa.</p>
+<h2 class="sub-t">Validade e certificado</h2>
+<details class="acc"><summary>Como conferir se meu treinamento está válido</summary><div class="corpo"><ol><li>Localize o certificado (impresso ou digital).</li><li>Confira nome, carga horária, conteúdo, data e instituição emissora.</li><li>Compare a data com a periodicidade exigida para a sua atividade, com apoio do RH ou do técnico de segurança.</li><li>Valide a autenticidade com a instituição emissora, pelos meios indicados no certificado.</li></ol></div></details>
+<details class="acc"><summary>Dicas gerais</summary><div class="corpo"><ul><li>Guarde uma cópia digital do certificado.</li><li>Solicite o treinamento antes de o prazo vencer.</li><li>Use apenas os EPIs para os quais foi treinado.</li><li>Em caso de dúvida, procure o técnico de segurança.</li></ul></div></details>
+<details class="acc"><summary>Registro e certificado</summary><div class="corpo"><p>A plataforma pode registrar a conclusão e emitir certificado, com possibilidade de certificação pelo SENAI mediante parceria e autorização formal.</p></div></details>
+</section>
+<section class="pagina" id="p-epi">
+<header class="ph"><h1>EPIs (NR-06)</h1><p>Toque em um equipamento para ver como usar.</p></header>
+<div class="tarja"><strong>Aviso:</strong> esta lista é um guia educacional e não substitui a consulta oficial. O uso de qualquer EPI exige a verificação de um Certificado de Aprovação (CA) válido para o modelo específico.</div>
+<div class="epi-grid" id="epiGrid">
+    <button class="epi-card" data-risco="fisico" data-epi="plug" type="button">
+      <span class="risco-tag">Risco físico</span><span class="icon">🎧</span><span class="title">Protetor Auricular<br>tipo Plug</span>
+    </button>
+    <button class="epi-card" data-risco="mecanico" data-epi="luva" type="button">
+      <span class="risco-tag">Risco mecânico</span><span class="icon">🧤</span><span class="title">Luva de Raspa</span>
+    </button>
+    <button class="epi-card" data-risco="multiplo" data-epi="oculos" type="button">
+      <span class="risco-tag">Risco múltiplo</span><span class="icon">🥽</span><span class="title">Óculos de<br>Proteção</span>
+    </button>
+    <button class="epi-card" data-risco="multiplo" data-epi="jaleco" type="button">
+      <span class="risco-tag">Risco múltiplo</span><span class="icon">🥼</span><span class="title">Vestimenta de Proteção do Tronco</span>
+    </button>
+    <button class="epi-card" data-risco="mecanico" data-epi="avental" type="button">
+      <span class="risco-tag">Risco mecânico</span><span class="icon">🦺</span><span class="title">Avental de Raspa</span>
+    </button>
+    <button class="epi-card" data-risco="mecanico" data-epi="botina" type="button">
+      <span class="risco-tag">Risco mecânico</span><span class="icon">🥾</span><span class="title">Botina de<br>Segurança</span>
+    </button>
+    <button class="epi-card" data-risco="multiplo" data-epi="mascara" type="button">
+      <span class="risco-tag">Risco múltiplo</span><span class="icon">🛡️</span><span class="title">Máscara de<br>Solda</span>
+    </button>
+    <button class="epi-card" data-risco="multiplo" data-epi="perneira" type="button">
+      <span class="risco-tag">Risco múltiplo</span><span class="icon">🦿</span><span class="title">Perneira</span>
+    </button>
+    <button class="epi-card" data-risco="quimico" data-epi="respirador" type="button">
+      <span class="risco-tag">Risco químico</span><span class="icon">😷</span><span class="title">Respirador<br>PFF2</span>
+    </button>
+  </div>
+
+</section>
+<section class="pagina" id="p-dds">
+<header class="ph"><h1>DDS</h1><p>Diálogos Diários de Segurança: conversas de cerca de 5 minutos antes das atividades.</p></header>
+<details class="acc"><summary>1. O EPI só protege quando é usado</summary><div class="corpo"><p><strong>Mensagem:</strong> o equipamento deve ser usado durante toda a exposição ao risco.</p><ul><li>Use o EPI do início ao fim da tarefa.</li><li>Não retire o equipamento “só por um instante”.</li><li>Informe ao responsável se o EPI atrapalhar a atividade.</li></ul></div></details>
+<details class="acc"><summary>2. Inspecione antes de usar</summary><div class="corpo"><p><strong>Mensagem:</strong> um EPI danificado não oferece a proteção prevista.</p><ul><li>Verifique rasgos, trincas, folgas e ressecamento.</li><li>Equipamento danificado deve ser substituído.</li><li>Comunique qualquer alteração ao responsável.</li></ul></div></details>
+<details class="acc"><summary>3. Confira o CA</summary><div class="corpo"><p><strong>Mensagem:</strong> todo EPI deve ter um CA válido para o modelo utilizado.</p><ul><li>O número do CA fica indicado no equipamento.</li><li>A validade e a situação são consultadas no CAEPI.</li><li>Em caso de dúvida, procure o técnico de segurança.</li></ul></div></details>
+<details class="acc"><summary>4. Guarda e conservação</summary><div class="corpo"><p><strong>Mensagem:</strong> cuidar do EPI mantém a proteção por mais tempo.</p><ul><li>Guarde limpo, seco e protegido de agentes que o danifiquem.</li><li>Higienize conforme orientação do fabricante.</li><li>Use o equipamento somente para a finalidade a que se destina.</li></ul></div></details>
+<details class="acc"><summary>5. O EPI é a última barreira</summary><div class="corpo"><p><strong>Mensagem:</strong> o EPI complementa as medidas coletivas e a organização do trabalho.</p><ul><li>Nunca dispense as demais medidas de proteção.</li><li>Respeite sinalizações e procedimentos da área.</li><li>Treinamento e EPI atuam juntos na prevenção de acidentes.</li></ul></div></details>
+
+</section>
+<section class="pagina" id="p-comunicados">
+<header class="ph"><h1>Comunicados</h1><p>Modelo de comunicado do SENAI sobre EPI e treinamento.</p></header>
+<div class="info"><b>Como usar este modelo</b>Substitua tudo o que está entre [colchetes] pelas informações da sua unidade. A data mostrada é apenas um exemplo.</div>
+<button class="btn-video noprint" id="btnImprimir" type="button" style="margin-top:12px">Imprimir / salvar em PDF</button>
+<article class="doc">
+    <p class="doc-marca">SENAI</p>
+    <p class="doc-n">COMUNICADO Nº [000]/2026</p>
+    <dl class="doc-meta"><div><dt>Assunto</dt><dd>Uso de EPI e verificação de treinamentos e capacitações</dd></div><div><dt>Data</dt><dd>[15/11/2026]</dd></div><div><dt>De</dt><dd>SENAI — [Unidade / Setor]</dd></div><div><dt>Para</dt><dd>Alunos, instrutores e colaboradores</dd></div></dl>
+    <p>O SENAI, como instituição de ensino, reforça que o treinamento e o uso correto dos Equipamentos de Proteção Individual (EPIs) são fundamentais para a segurança e para garantir a integridade física e a saúde de todos que frequentam os nossos ambientes de aprendizagem e de trabalho, em conformidade com a NR-06.</p>
+    <p>Precisamos utilizar o EPI adequado a cada atividade e verificar, com regularidade, a validade dos nossos treinamentos e capacitações.</p>
+    <p>Diante disso, recomendamos que:</p>
+    <ul><li>o treinamento seja realizado antes do início da atividade;</li><li>o EPI adequado seja utilizado durante toda a atividade, inspecionado antes do uso e que qualquer dano ou alteração seja comunicado imediatamente;</li><li>o número do Certificado de Aprovação (CA) e a sua validade sejam conferidos na consulta oficial do CAEPI;</li><li>os treinamentos e as capacitações sejam verificados periodicamente, e o treinamento periódico seja realizado conforme a periodicidade prevista na NR aplicável ou em caso de mudança de atividade;</li><li>o certificado de conclusão seja mantido atualizado e disponível.</li></ul>
+    <p>Para facilitar o acesso à capacitação, o SENAI disponibiliza treinamentos online e práticos, com registro de conclusão e certificado.</p>
+    <p>Contamos com a colaboração de todos. Em caso de dúvidas, procure o responsável pela segurança do trabalho da unidade ou a equipe de suporte.</p>
+    <p class="assin">[Nome do responsável]<br>SENAI — [Unidade / Setor]</p>
+  </article>
+</section>
+<section class="pagina" id="p-suporte">
+<header class="ph"><h1>Suporte</h1><p>Descreva o problema e seja direcionado ao contato.</p></header>
+<div class="aviso" style="margin:0 0 16px"><strong>Importante:</strong> o contato (27) 99695-2153 é apenas um exemplo de canal de suporte, usado para demonstração.</div>
+<form id="formSup" class="form"><label for="supNome">Nome (opcional)</label><input id="supNome" autocomplete="name"><label for="supMsg">O que está errado?</label><button class="voz-b ditar" id="btnDitar" type="button"><span class="ic" aria-hidden="true">🎤</span><span id="ditarT">Ditar por voz</span></button><p class="nota" id="ditarSt" role="status"></p><textarea id="supMsg" rows="5" required></textarea><button class="btn-video" type="submit">Enviar ao suporte</button></form>
+</section>
+</main>
+<footer class="rodape"><p>Material de apoio educacional com base na NR-06 do Ministério do Trabalho e Emprego.</p><button class="lk" id="btnSobre" type="button">Sobre o site</button><a class="lk" href="#suporte" data-go="suporte">Suporte</a><button class="lk" id="btnTopo" type="button">Voltar ao topo</button></footer>
+<aside class="painel" id="painel" aria-label="Detalhes do EPI"><div class="p-top"><div class="in"><button class="voltar" id="btnFechar" type="button">← Voltar</button><strong id="pTitulo"></strong><button class="voltar" id="btnOuvirEpi" type="button">🔊 Ouvir</button></div></div>
+<div class="p-corpo"><div class="d-head"><div class="icone-grande" id="detalheIcone"></div><h2 id="detalheNome"></h2><span class="risco-badge" id="detalheRisco"></span></div>
+<p class="d-desc" id="detalheDescricao"></p><div class="info" style="margin-bottom:16px"><b>Vida útil</b><span id="detalheVida"></span></div>
+<div class="seg" id="botoesTopicos" role="tablist" aria-label="Tópicos do EPI"><button role="tab" data-t="como-usar" aria-selected="true" type="button">Como usar</button><button role="tab" data-t="cuidados" aria-selected="false" tabindex="-1" type="button">Cuidados</button><button role="tab" data-t="higiene" aria-selected="false" tabindex="-1" type="button">Higiene</button><button role="tab" data-t="quando-usar" aria-selected="false" tabindex="-1" type="button">Quando usar</button><button role="tab" data-t="ca" aria-selected="false" tabindex="-1" type="button">CA</button></div>
+<div class="topico-conteudo" id="topicoConteudo" role="tabpanel" tabindex="0"></div>
+<a class="btn-video" id="btnVideo" href="#" target="_blank" rel="noopener noreferrer">▶ Assistir tutorial no YouTube</a>
+<div class="aviso"><strong>Importante:</strong> o CA e as instruções específicas devem ser conferidos no próprio EPI, na documentação do fabricante e na consulta oficial do Ministério do Trabalho e Emprego.</div></div></aside>
+<div class="veu hidden" id="veu"></div>
+<nav class="gaveta" id="gaveta" aria-label="Categorias" inert><div class="g-top"><strong>Categorias</strong><button type="button" id="btnFecharMenu" aria-label="Fechar menu">✕</button></div>
+<a href="#inicio" data-go="inicio">Início</a><a href="#treinamentos" data-go="treinamentos">Treinamentos</a><a href="#epi" data-go="epi">EPIs (NR-06)</a><a href="#dds" data-go="dds">DDS</a><a href="#comunicados" data-go="comunicados">Comunicados</a><a href="#suporte" data-go="suporte">Suporte</a><button class="item" id="menuSobre" type="button">Sobre o site</button></nav>
+<nav class="abas-baixo" aria-label="Navegação principal"><a href="#inicio" data-go="inicio"><i>🏠</i>Início</a><a href="#treinamentos" data-go="treinamentos"><i>🎓</i>Treinamentos</a><a href="#epi" data-go="epi"><i>🦺</i>EPIs</a><a href="#dds" data-go="dds"><i>💬</i>DDS</a><button id="btnMenu" type="button" aria-expanded="false" aria-controls="gaveta"><i>☰</i>Menu</button></nav>
+<button class="voz-fab" id="vozFab" type="button" aria-expanded="false" aria-controls="vozP"><span aria-hidden="true">🎤</span> Voz</button>
+<section class="voz-p hidden" id="vozP" role="dialog" aria-label="Voz: comandos e leitura em voz alta">
+<div class="voz-top"><strong>Voz</strong><button type="button" id="vozX" aria-label="Fechar">✕</button></div>
+<button class="voz-b pri" id="vozFalar" type="button"><span class="ic" aria-hidden="true">🎤</span><span><span id="vozFalarT">Falar um comando</span><small>Ex.: “abrir EPIs”, “soldagem”, “luva”</small></span></button>
+<button class="voz-b" id="vozOuvir" type="button"><span class="ic" id="vozOuvirI" aria-hidden="true">🔊</span><span id="vozOuvirT">Ouvir esta página</span></button>
+<button class="voz-b" id="vozLibras" type="button"><span class="ic" aria-hidden="true">🤟</span><span><span>Assistente de Libras</span><small>Abre o VLibras</small></span></button>
+<p class="voz-st" id="vozSt" role="status">Toque em “Falar um comando” ou escolha um atalho.</p>
+<div class="voz-chips" aria-label="Atalhos"><button type="button" data-c="treinamentos">Treinamentos</button><button type="button" data-c="epis">EPIs</button><button type="button" data-c="soldagem">Soldagem</button><button type="button" data-c="protetor auricular">Protetor auricular</button><button type="button" data-c="ler">Ler esta página</button><button type="button" data-c="libras">Libras</button><button type="button" data-c="contraste">Alto contraste</button></div>
+</section>
+<div class="voz-toast hidden" id="vozToast" role="status" aria-live="polite"></div>
+<dialog class="dlg" id="dlgSobre" aria-labelledby="sobreTitulo">
+  <h2 id="sobreTitulo">Sobre o site</h2>
+  <p>Este site foi desenvolvido com o objetivo de facilitar o acesso a informações sobre Equipamentos de Proteção Individual (EPIs), contribuindo para o uso correto e seguro desses equipamentos.</p>
+  <p class="autoria">Desenvolvimento: Turma Técnico em Segurança do Trabalho.</p>
+  <button class="dlg-fechar" id="btnFecharSobre" type="button">Fechar</button>
+</dialog>
+<script>
+const EPIS = {
+  plug:{
+    nome:'Protetor Auricular tipo Plug',icone:'🎧',risco:'Risco físico',cor:'#2e7d32',
+    descricao:'Protetor auditivo de inserção (plug) destinado à proteção do sistema auditivo contra níveis de pressão sonora superiores ao estabelecido na NR-15, Anexos I e II, conforme o modelo certificado.',
+    vida:'Conforme fabricante e condições de uso',youtube:'protetor auricular plug como usar',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Lave as mãos antes de manipular o protetor.</li><li>Para plug de espuma, comprima o material conforme as instruções do fabricante.</li><li>Posicione corretamente no canal auditivo, sem forçar.</li><li>Verifique se ficou bem ajustado antes de iniciar a exposição ao ruído.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Não use o protetor se estiver danificado ou contaminado.</li><li>Não compartilhe protetores de uso individual.</li><li>Substitua conforme as orientações do fabricante e as condições de uso.</li><li>O protetor não elimina a necessidade de outras medidas de controle do ruído.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Higienize os modelos reutilizáveis conforme o manual do fabricante.</li><li>Não aplique produtos químicos que não sejam recomendados.</li><li>Guarde limpo e protegido de sujeira e umidade.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Em atividades com exposição a níveis de pressão sonora acima dos critérios aplicáveis (NR-15, Anexos I e II).</li><li>Durante o período de exposição ao ruído, conforme orientação do programa de conservação auditiva.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira se o produto possui <strong>CA válido</strong>.</li><li>Verifique se o CA corresponde ao modelo e à proteção oferecida.</li><li>Consulte as informações oficiais do MTE para confirmar o certificado.</li></ul>`
+    }
+  },
+  luva:{
+    nome:'Luva de Raspa',icone:'🧤',risco:'Risco mecânico',cor:'#1565c0',
+    descricao:'Luva que pode oferecer proteção das mãos contra agentes abrasivos e escoriantes e, dependendo do modelo certificado, contra outros riscos previstos no CA.',
+    vida:'Conforme desgaste, dano e orientação do fabricante',youtube:'luva de raspa EPI como usar',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Escolha o tamanho adequado.</li><li>Verifique a luva antes de cada uso.</li><li>Vista completamente e ajuste conforme o modelo.</li><li>Use apenas para os riscos contemplados no CA.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Verifique cortes, furos, rasgos e costuras danificadas.</li><li>Não use a luva de raspa para produtos químicos somente por ela ser uma luva.</li><li>Substitua quando o dano comprometer a proteção.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Siga as instruções de limpeza do fabricante.</li><li>Mantenha a luva seca e armazenada em local adequado.</li><li>Evite condições que deterioram o couro.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Em manuseio de materiais ásperos e abrasivos, quando o modelo for certificado para esse risco.</li><li>Em determinadas atividades de soldagem e movimentação de materiais, conforme o CA e a avaliação de riscos.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira o CA da luva.</li><li>Verifique quais riscos estão contemplados no certificado.</li></ul>`
+    }
+  },
+  oculos:{
+    nome:'Óculos de Proteção',icone:'🥽',risco:'Risco múltiplo',cor:'#6a1b9a',
+    descricao:'Óculos destinados à proteção dos olhos e face contra impactos de partículas volantes, luminosidade intensa, radiação ultravioleta e radiação infravermelha, conforme a versão certificada.',
+    vida:'Até apresentar dano que comprometa a proteção',youtube:'óculos de proteção EPI como usar',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Escolha o modelo adequado ao risco.</li><li>Ajuste as hastes ou o sistema de retenção corretamente.</li><li>Certifique-se de que as lentes e a armação estejam em boas condições antes do uso.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Não utilize lentes trincadas ou muito danificadas.</li><li>Não substitua o EPI por óculos comuns.</li><li>Use lente específica quando houver risco de radiação ou outro agente que exija proteção própria.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Limpe conforme o manual do fabricante.</li><li>Use materiais que não danifiquem as lentes.</li><li>Guarde protegido contra riscos e impactos.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Em atividades com risco de partículas volantes.</li><li>Em operações que apresentem o risco previsto na certificação do modelo.</li><li>Para soldagem, utilize a proteção específica da máscara de solda quando necessária.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira o CA do modelo utilizado.</li><li>Verifique a proteção declarada para o equipamento.</li></ul>`
+    }
+  },
+  jaleco:{
+    nome:'Vestimenta para Proteção do Tronco',icone:'🥼',risco:'Risco múltiplo',cor:'#6a1b9a',
+    descricao:'Vestimenta para proteção do tronco contra riscos de origem térmica, mecânica, química, radioativa e meteorológica, conforme o modelo certificado. Jalecos comuns não são automaticamente EPI; a peça deve ter CA quando aplicável.',
+    vida:'Conforme fabricante, conservação e condições de uso',youtube:'vestimenta de proteção EPI uso correto',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Utilize a vestimenta adequada ao risco previsto no CA.</li><li>Vista e feche corretamente conforme as instruções do fabricante.</li><li>Respeite as áreas e procedimentos definidos pela empresa.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Não utilize uma vestimenta comum como se fosse EPI certificado.</li><li>Retire a vestimenta seguindo o procedimento para evitar contaminação.</li><li>Substitua quando o dano comprometer a proteção.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Higienize conforme o fabricante e os procedimentos da empresa.</li><li>Quando houver contaminação, siga o procedimento específico de descontaminação.</li><li>Armazene adequadamente após a higienização.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Quando a avaliação de risco indicar a necessidade de vestimenta de proteção do tronco e o modelo for adequado.</li><li>Confira no CA quais riscos a vestimenta cobre: o nome “jaleco” não garante proteção.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira se a peça é realmente EPI e possui CA quando aplicável.</li><li>Verifique a finalidade e os riscos contemplados no certificado.</li></ul>`
+    }
+  },
+  avental:{
+    nome:'Avental de Raspa',icone:'🦺',risco:'Risco mecânico',cor:'#1565c0',
+    descricao:'Vestimenta para proteção do tronco que pode ser destinada à proteção contra agentes térmicos ou mecânicos, conforme as características e a certificação do produto.',
+    vida:'Conforme fabricante, desgaste e condições de uso',youtube:'avental de raspa EPI solda como usar',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Vista o avental cobrindo a região indicada pelo fabricante.</li><li>Ajuste corretamente as tiras e fechos.</li><li>Inspecione antes do uso.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Não utilize se houver dano que comprometa a proteção.</li><li>Mantenha afastado de agentes incompatíveis com o material.</li><li>Use em conjunto com os demais EPIs necessários à atividade.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Limpe e armazene conforme orientação do fabricante.</li><li>Mantenha seco e protegido de umidade excessiva.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Em atividades de soldagem e trabalho a quente quando o CA for adequado.</li><li>Quando houver risco térmico ou mecânico compatível com a certificação.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira o CA e os riscos contemplados pelo equipamento.</li></ul>`
+    }
+  },
+  botina:{
+    nome:'Botina de Segurança',icone:'🥾',risco:'Risco mecânico',cor:'#1565c0',
+    descricao:'Calçado de segurança destinado à proteção dos pés contra riscos específicos, como impacto de objetos sobre os artelhos, além de outras proteções previstas no modelo certificado.',
+    vida:'Conforme desgaste, conservação e orientação do fabricante',youtube:'botina de segurança EPI como usar',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Escolha o tamanho adequado.</li><li>Use o calçado fechado e corretamente ajustado.</li><li>Inspecione o solado, cabedal e demais componentes antes do trabalho.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Não utilize calçado danificado.</li><li>Observe desgaste excessivo do solado ou de componentes de proteção.</li><li>Não faça alterações que comprometam as características certificadas.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Mantenha o calçado limpo e seco.</li><li>Realize a limpeza conforme a orientação do fabricante.</li><li>Armazene em local ventilado.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Em atividades com riscos aos pés contemplados no CA.</li><li>Em áreas industriais, obras e movimentação de materiais, conforme a avaliação de riscos.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira o CA do calçado.</li><li>Verifique se a proteção atende ao risco da atividade.</li></ul>`
+    }
+  },
+  mascara:{
+    nome:'Máscara de Solda',icone:'🛡️',risco:'Risco múltiplo',cor:'#6a1b9a',
+    descricao:'Máscara de solda para proteção dos olhos e da face contra impactos de partículas volantes, radiação ultravioleta, radiação infravermelha e luminosidade intensa, conforme a NR-06.',
+    vida:'Conforme conservação, lente e orientação do fabricante',youtube:'máscara de solda EPI como usar',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Ajuste a máscara corretamente à cabeça.</li><li>Use filtro/lente compatível com o processo de soldagem.</li><li>Mantenha a proteção posicionada corretamente durante a operação.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Não utilize lente trincada ou inadequada.</li><li>Verifique a estrutura e o sistema de fixação antes do uso.</li><li>Utilize os demais EPIs necessários conforme a avaliação de riscos.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Limpe conforme as instruções do fabricante.</li><li>Mantenha a lente livre de sujeira que prejudique a visão.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Durante operações de soldagem que apresentem os riscos previstos na certificação.</li><li>O filtro e a lente devem ser apropriados ao processo realizado.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira o CA do equipamento.</li><li>Verifique se o modelo é apropriado ao processo de soldagem realizado.</li></ul>`
+    }
+  },
+  perneira:{
+    nome:'Perneira',icone:'🦿',risco:'Risco múltiplo',cor:'#6a1b9a',
+    descricao:'Perneira destinada à proteção da perna contra riscos específicos, incluindo agentes abrasivos e escoriantes, cortantes e perfurantes, conforme o modelo certificado.',
+    vida:'Conforme desgaste, dano e orientação do fabricante',youtube:'perneira EPI como usar',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Posicione a perneira cobrindo a região indicada pelo fabricante.</li><li>Ajuste corretamente os fechos.</li><li>Verifique se permaneceu firme antes de iniciar a atividade.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Verifique cortes, furos e desgaste.</li><li>Substitua quando o dano comprometer a proteção.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Limpe conforme a orientação do fabricante.</li><li>Armazene em local seco e protegido.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Em atividades com riscos às pernas contemplados no CA.</li><li>Em trabalhos como roçada, corte ou contato com agentes abrasivos, quando o modelo for adequado.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Verifique o CA e a finalidade do equipamento.</li></ul>`
+    }
+  },
+  respirador:{
+    nome:'Respirador PFF2',icone:'😷',risco:'Risco químico',cor:'#c62828',
+    descricao:'Peça semifacial filtrante para partículas PFF2, destinada à proteção das vias respiratórias contra poeiras, névoas e fumos, conforme a classificação prevista na NR-06.',
+    vida:'Conforme fabricante, condições de uso e programa de proteção respiratória',youtube:'respirador PFF2 colocação correta',
+    topicos:{
+      'como-usar':`<h3>Como usar</h3><ul><li>Higienize as mãos antes da colocação.</li><li>Posicione cobrindo completamente nariz, boca e queixo.</li><li>Ajuste os tirantes conforme o modelo.</li><li>Faça a verificação de vedação indicada pelo fabricante.</li></ul>`,
+      'cuidados':`<h3>Cuidados</h3><ul><li>Não utilize se estiver danificado ou sem vedação adequada.</li><li>Não utilize uma PFF2 para gases e vapores; para esses agentes são necessários filtros apropriados.</li><li>Barreira de pelos na área de vedação pode comprometer o ajuste.</li><li>Substitua de acordo com as condições de uso e orientação do fabricante.</li></ul>`,
+      'higiene':`<h3>Higiene</h3><ul><li>Siga exatamente as instruções do fabricante para armazenamento e eventual reutilização.</li><li>Não lave ou altere a peça sem previsão do fabricante.</li><li>Armazene em local limpo e seco.</li></ul>`,
+      'quando-usar':`<h3>Quando usar</h3><ul><li>Em atividades com poeiras, névoas e fumos para os quais a PFF2 seja indicada.</li><li>Selecione a proteção respiratória por meio da avaliação do risco e dos procedimentos de proteção respiratória da empresa.</li></ul>`,
+      'ca':`<h3>Certificado de Aprovação</h3><ul><li>Confira o CA e a classificação do respirador.</li><li>Verifique se a PFF2 é adequada ao contaminante presente.</li></ul>`
+    }
+  }
+};
+
+const $=id=>document.getElementById(id);
+const PAGES={inicio:'Início',treinamentos:'Treinamentos',epi:'EPIs (NR-06)',dds:'DDS',comunicados:'Comunicados',suporte:'Suporte'};
+const raiz=document.documentElement,PCT=[87.5,100,112.5,125,137.5];let ti=1,pend=null,epiAtual=null;
+const guardar=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},ler=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const gaveta=$('gaveta'),veu=$('veu'),painel=$('painel'),dlg=$('dlgSobre'),aaP=$('acessP'),cards=[...document.querySelectorAll('.epi-card')];
+function abasDe(c,fn){const b=[...c.querySelectorAll('[role=tab]')];
+  const sel=(i,f)=>{b.forEach((x,j)=>{x.setAttribute('aria-selected',j===i);x.tabIndex=j===i?0:-1});if(f)b[i].focus();fn(b[i].dataset.t)};
+  b.forEach((x,i)=>{x.id=c.id+'-'+x.dataset.t;x.addEventListener('click',()=>sel(i));x.addEventListener('keydown',e=>{const n={ArrowRight:(i+1)%b.length,ArrowLeft:(i-1+b.length)%b.length,Home:0,End:b.length-1}[e.key];if(n!==undefined){e.preventDefault();sel(n,true)}})});
+  return t=>{const i=b.findIndex(x=>x.dataset.t===t);if(i>=0)sel(i)}}
+const selTr=abasDe($('abasTr'),t=>document.querySelectorAll('.tp').forEach(p=>p.classList.toggle('on',p.id==='tp-'+t)));
+const selEpi=abasDe($('botoesTopicos'),t=>{const e=EPIS[epiAtual];if(e?.topicos?.[t])$('topicoConteudo').innerHTML=e.topicos[t];$('topicoConteudo').setAttribute('aria-labelledby','botoesTopicos-'+t)});
+
+function tamanho(i){ti=Math.max(0,Math.min(PCT.length-1,i));raiz.style.fontSize=PCT[ti]+'%';guardar('tam',ti);$('aMenos').disabled=ti===0;$('aMais').disabled=ti===PCT.length-1}
+function contraste(on){raiz.classList.toggle('contraste',on);$('btnContraste').setAttribute('aria-pressed',on);guardar('contraste',on?'1':'0')}
+function aa(on){aaP.classList.toggle('hidden',!on);$('btnAa').setAttribute('aria-expanded',on)}
+function menu(on){gaveta.classList.toggle('aberta',on);gaveta.inert=!on;veu.classList.toggle('hidden',!on);$('btnMenu').setAttribute('aria-expanded',on);document.body.classList.toggle('trava',on||painel.classList.contains('aberto'));if(on)gaveta.querySelector('a').focus()}
+function mostrar(id){
+  if(!PAGES[id])id='inicio';pararFala(true);
+  document.querySelectorAll('.pagina').forEach(p=>p.classList.toggle('on',p.id==='p-'+id));
+  document.querySelectorAll('.abas-baixo a,.gaveta a').forEach(a=>a.dataset.go===id?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+  document.title=id==='inicio'?'Portal Segurança':PAGES[id]+' — Portal Segurança';
+  menu(false);aa(false);scrollTo(0,0);if(pend){selTr(pend);pend=null}
+}
+function abrirEPI(id){
+  const e=EPIS[id];if(!e)return;epiAtual=id;
+  cards.forEach(c=>c.setAttribute('aria-pressed',c.dataset.epi===id));
+  painel.style.setProperty('--cor-risco',e.cor);
+  $('detalheIcone').textContent=e.icone;$('detalheNome').textContent=e.nome;$('pTitulo').textContent=e.nome;
+  const b=$('detalheRisco');b.textContent=e.risco;b.style.background=e.cor;
+  $('detalheDescricao').textContent=e.descricao;$('detalheVida').textContent=e.vida;
+  $('btnVideo').href='https://www.youtube.com/results?search_query='+encodeURIComponent(e.youtube);
+  painel.classList.add('aberto');document.body.classList.add('trava');painel.scrollTop=0;selEpi('como-usar');$('btnFechar').focus({preventScroll:true});
+}
+function fechar(){const a=epiAtual;epiAtual=null;painel.classList.remove('aberto');document.body.classList.remove('trava');if(a)document.querySelector(`.epi-card[data-epi="${a}"]`)?.focus()}
+
+cards.forEach(c=>{c.setAttribute('aria-pressed','false');c.addEventListener('click',()=>abrirEPI(c.dataset.epi))});
+$('btnFechar').addEventListener('click',fechar);
+document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const g=a.dataset.go;pend=a.dataset.tab||null;location.hash==='#'+g?mostrar(g):(location.hash=g)}));
+addEventListener('hashchange',()=>mostrar(location.hash.slice(1)));
+$('btnMenu').addEventListener('click',()=>menu(true));$('btnFecharMenu').addEventListener('click',()=>{menu(false);$('btnMenu').focus()});veu.addEventListener('click',()=>menu(false));
+$('btnAa').addEventListener('click',e=>{e.stopPropagation();aa(aaP.classList.contains('hidden'))});document.addEventListener('click',e=>{if(!aaP.contains(e.target))aa(false)});
+document.addEventListener('keydown',e=>{if(e.key!=='Escape'||dlg.open)return;if(vozAberta()){vozAbrir(false);vozFab.focus();return}if(gaveta.classList.contains('aberta')){menu(false);$('btnMenu').focus()}else if(!aaP.classList.contains('hidden')){aa(false);$('btnAa').focus()}else if(epiAtual)fechar()});
+['btnSobre','tileSobre','menuSobre'].forEach(i=>$(i).addEventListener('click',()=>{menu(false);dlg.showModal()}));
+$('btnFecharSobre').addEventListener('click',()=>dlg.close());dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+$('aMenos').addEventListener('click',()=>tamanho(ti-1));$('aMais').addEventListener('click',()=>tamanho(ti+1));$('aPadrao').addEventListener('click',()=>tamanho(1));
+$('btnContraste').addEventListener('click',()=>contraste(!raiz.classList.contains('contraste')));
+$('skip').addEventListener('click',e=>{e.preventDefault();const c=$('conteudo');c.setAttribute('tabindex','-1');c.focus()});
+$('btnTopo').addEventListener('click',()=>scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'}));
+$('formSup').addEventListener('submit',e=>{e.preventDefault();const t='Suporte — Portal Segurança\nNome: '+($('supNome').value.trim()||'não informado')+'\nProblema: '+$('supMsg').value.trim();window.open('https://wa.me/5527996952153?text='+encodeURIComponent(t),'_blank','noopener')});
+$('btnImprimir').addEventListener('click',()=>window.print());
+
+// ===== TREINAMENTO POR ÁREA =====
+// Para cadastrar a apresentação de cada área, troque o [link] pelo endereço do site (ex.: 'https://...').
+const AREAS={
+soldagem:{nome:'Soldagem',link:'[link]',riscos:'Radiação (UV e IV), luminosidade, faíscas e respingos, fumos metálicos e calor.',epis:'Máscara de solda, avental e luva de raspa, perneira, botina e respirador, conforme o processo.',proc:['Inspecionar os EPIs e a lente da máscara antes de cada jornada.','Manter a área ventilada e livre de materiais inflamáveis.','Usar os EPIs do início ao fim da operação.','Sinalizar ou isolar a área para proteger quem está por perto.']},
+mecanica:{nome:'Mecânica',link:'[link]',riscos:'Impactos, cortes, partículas, ruído e contato com óleos e solventes.',epis:'Óculos de proteção, luvas adequadas à tarefa, protetor auricular e botina.',proc:['Usar ferramentas adequadas e em bom estado.','Seguir o procedimento da empresa para desligar e bloquear o equipamento antes da manutenção.','Manter bancada e piso organizados e limpos.','Descartar óleos e resíduos conforme o procedimento da empresa.']},
+usinagem:{nome:'Usinagem',link:'[link]',riscos:'Projeção de cavacos, partes móveis, ruído e fluidos de corte.',epis:'Óculos de proteção, protetor auricular e botina.',proc:['Verificar se as proteções da máquina estão no lugar antes de operar.','Fixar corretamente a peça e a ferramenta.','Remover cavacos com ferramenta apropriada, nunca com as mãos.','Evitar luvas soltas, mangas largas e adornos perto de partes giratórias; manter os cabelos presos.']},
+tornearia:{nome:'Tornearia',link:'[link]',riscos:'Cavacos, peça em rotação, ruído e fluido de corte.',epis:'Óculos de proteção, protetor auricular e botina.',proc:['Não usar luvas, mangas soltas ou adornos ao operar o torno.','Conferir a fixação da peça e retirar a chave da placa antes de ligar.','Parar o torno antes de medir a peça ou remover cavacos.','Manter os cabelos presos e a área de trabalho limpa.']},
+metalografia:{nome:'Metalografia',link:'[link]',riscos:'Produtos químicos (reagentes), partículas de lixamento e polimento e ruído.',epis:'Óculos de proteção, luvas adequadas ao reagente, vestimenta compatível e respirador, conforme o agente.',proc:['Ler a ficha de segurança (FISPQ) dos reagentes antes de usar.','Manusear reagentes em local ventilado ou em capela.','Identificar os frascos e descartar resíduos conforme o procedimento.','Usar os EPIs durante todo o preparo e o ataque das amostras.']},
+costura:{nome:'Costura',link:'[link]',riscos:'Perfuração por agulha, cortes, poeira de tecido e esforço repetitivo.',epis:'Conforme a avaliação de riscos: luva de proteção contra corte em tesoura ou máquina de corte, óculos e protetor auricular.',proc:['Desligar a máquina para trocar a agulha ou passar a linha.','Manter as proteções da máquina no lugar.','Cortar com a ferramenta apropriada e guardá-la após o uso.','Manter a postura adequada e fazer as pausas previstas.']},
+marcenaria:{nome:'Marcenaria',link:'[link]',riscos:'Ruído, serragem, projeção de partículas e cortes.',epis:'Óculos de proteção, protetor auricular, respirador para pó, botina e luvas apenas quando seguras para a tarefa.',proc:['Verificar proteções e lâminas antes de ligar a máquina.','Usar empurrador ou gabarito, mantendo as mãos longe da lâmina.','Manter a exaustão ligada e a serragem limpa.','Não usar luvas ou mangas soltas em máquinas com partes giratórias.']},
+eletrica:{nome:'Elétrica',link:'[link]',riscos:'Choque elétrico, arco elétrico e queda.',epis:'EPIs específicos para eletricidade (como luvas isolantes e calçado adequado), definidos pela avaliação de riscos.',proc:['Somente profissionais habilitados e autorizados realizam a intervenção.','Desenergizar, bloquear e sinalizar o circuito antes de intervir.','Confirmar a ausência de tensão antes de tocar nos condutores.','Usar ferramentas isoladas e em bom estado.'],obs:'A atividade com eletricidade exige capacitação específica, conforme a NR-10.'}
+};
+const calmo=()=>matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth';
+let areaAtual=null;const areasEl=$('areas');
+Object.entries(AREAS).forEach(([k,a])=>{const b=document.createElement('button');b.type='button';b.className='area-b';b.textContent=a.nome;b.dataset.area=k;b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>abrirArea(k));areasEl.appendChild(b)});
+function abrirArea(k){
+  const a=AREAS[k];areaAtual=k;
+  areasEl.querySelectorAll('.area-b').forEach(b=>b.setAttribute('aria-pressed',b.dataset.area===k));
+  $('areaNome').textContent='Treinamento de '+a.nome;$('areaRiscos').textContent=a.riscos;$('areaEpis').textContent=a.epis;
+  $('areaProc').innerHTML=a.proc.map(x=>'<li>'+x+'</li>').join('');
+  $('areaObs').textContent=a.obs||'';$('areaObs').classList.toggle('hidden',!a.obs);
+  $('btnApres').href=a.link.includes('[')?'#':a.link;
+  $('areaDet').classList.remove('hidden');
+  $('areaDet').scrollIntoView({behavior:calmo(),block:'start'});
+}
+$('btnOutra').addEventListener('click',()=>$('hAreas').scrollIntoView({behavior:calmo(),block:'start'}));
+$('btnApres').addEventListener('click',e=>{if(AREAS[areaAtual].link.includes('['))e.preventDefault()});
+
+// ===== VOZ (português): ouvir a página, comandos por voz e ditado =====
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition,TTS=window.speechSynthesis;
+const vozFab=$('vozFab'),vozP=$('vozP'),vozSt=$('vozSt');
+let ouvindo=null,falando=false,vozPt=null,leitura=0,tT;
+const vozAberta=()=>!vozP.classList.contains('hidden');
+function vozAbrir(on){vozP.classList.toggle('hidden',!on);vozFab.setAttribute('aria-expanded',on);if(on)$('vozFalar').focus()}
+function st(t,alvo){(alvo||vozSt).textContent=t;if(!alvo&&!vozAberta()){const x=$('vozToast');x.textContent=t;x.classList.remove('hidden');clearTimeout(tT);tT=setTimeout(()=>x.classList.add('hidden'),4500)}}
+function ui(){
+  $('vozOuvirT').textContent=falando?'Parar leitura':'Ouvir esta página';$('vozOuvirI').textContent=falando?'⏹':'🔊';
+  $('btnOuvirEpi').textContent=falando?'⏹ Parar':'🔊 Ouvir';
+  $('vozFalarT').textContent=ouvindo?'Ouvindo… toque para cancelar':'Falar um comando';vozFab.classList.toggle('ouvindo',!!ouvindo);
+}
+
+// --- leitura em voz alta (voz em português) ---
+function escolherVoz(){if(!TTS)return;const v=TTS.getVoices();vozPt=v.find(x=>/^pt[-_]br/i.test(x.lang))||v.find(x=>/^pt/i.test(x.lang))||null}
+if(TTS){escolherVoz();TTS.addEventListener&&TTS.addEventListener('voiceschanged',escolherVoz)}
+function textoLeitura(){
+  const limpa=t=>t.replace(/[\p{Extended_Pictographic}\u2190-\u21FF\u2713\u25B6\u2212]/gu,' ').replace(/\s*\n\s*/g,'. ').replace(/([.!?:;])\s*\./g,'$1').replace(/\s+/g,' ').trim();
+  if(painel.classList.contains('aberto')&&EPIS[epiAtual]){const e=EPIS[epiAtual];return limpa(e.nome+'. '+e.risco+'. '+e.descricao+'\nVida útil: '+e.vida+'\n'+$('topicoConteudo').innerText)}
+  return limpa(document.querySelector('.pagina.on').innerText);
+}
+function pedacos(t){const fr=t.match(/[^.!?]+[.!?]*/g)||[t],out=[];let c='';fr.forEach(f=>{if(c&&(c+f).length>220){out.push(c.trim());c=''}c+=f+' '});if(c.trim())out.push(c.trim());return out}
+function lerPagina(){
+  if(!TTS){st('Este navegador não tem leitura em voz alta. Use o Chrome, o Edge ou o Safari.');return}
+  pararFala(true);const ps=pedacos(textoLeitura());if(!ps.length)return;
+  const id=++leitura;falando=true;ui();
+  st(vozPt?'Lendo em voz alta…':'Nenhuma voz em português foi encontrada neste aparelho: a leitura pode sair em outro idioma.');
+  ps.forEach((p,i)=>{const u=new SpeechSynthesisUtterance(p);u.lang='pt-BR';if(vozPt)u.voice=vozPt;
+    u.onend=()=>{if(id===leitura&&i===ps.length-1){falando=false;ui();st('Leitura concluída.')}};
+    u.onerror=ev=>{if(id===leitura&&ev.error!=='canceled'&&ev.error!=='interrupted'){falando=false;ui();st('Não foi possível ler em voz alta.')}};
+    TTS.speak(u)});
+}
+function pararFala(quieto){leitura++;if(TTS)TTS.cancel();const era=falando;falando=false;ui();if(!quieto&&era)st('Leitura parada.')}
+
+// --- comandos por voz ---
+//CMD-INI
+const norm=t=>t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+const tem=(t,l)=>l.some(w=>(' '+t+' ').includes(' '+w+' '));
+const EPI_PAL={plug:['auricular','plug','ouvido'],luva:['luva','luvas'],oculos:['oculos'],jaleco:['vestimenta','jaleco','tronco'],avental:['avental'],botina:['botina','bota'],mascara:['mascara'],perneira:['perneira'],respirador:['respirador','pff2','pff 2']};
+const AREA_PAL={soldagem:['soldagem','solda'],mecanica:['mecanica'],usinagem:['usinagem'],tornearia:['tornearia','torno'],metalografia:['metalografia'],costura:['costura'],marcenaria:['marcenaria'],eletrica:['eletrica']};
+const ABA_PAL={'como-usar':['como usar'],cuidados:['cuidado','cuidados'],higiene:['higiene','limpeza'],'quando-usar':['quando usar'],ca:['ca','certificado']};
+const PAG_PAL={inicio:['inicio','home','principal'],treinamentos:['treinamento','treinamentos'],epi:['epi','epis','equipamentos'],dds:['dds','dialogo','dialogos'],comunicados:['comunicado','comunicados'],suporte:['suporte']};
+function irPara(id){
+  if(painel.classList.contains('aberto'))fechar();
+  try{if(location.hash!=='#'+id)history.pushState(null,'','#'+id)}catch(e){location.hash=id;return}
+  mostrar(id);
+}
+const AJUDA='Diga: início, treinamentos, EPIs, DDS, comunicados, suporte, uma área (soldagem…) ou um EPI (luva…). Também: ler, parar, aumentar, diminuir, contraste, libras.';
+function executar(t){
+  if(tem(t,['parar','pare','silencio'])){pararFala();return true}
+  if(tem(t,['ler','leia','ouvir','ouca'])){lerPagina();return true}
+  if(tem(t,['aumentar','ampliar','maior'])){tamanho(ti+1);return true}
+  if(tem(t,['diminuir','reduzir','menor'])){tamanho(ti-1);return true}
+  if(tem(t,['contraste'])){contraste(!raiz.classList.contains('contraste'));return true}
+  if(tem(t,['menu','categorias'])){menu(true);return true}
+  if(tem(t,['voltar','fechar'])){epiAtual?fechar():irPara('inicio');return true}
+  if(tem(t,['ajuda','comandos'])){st(AJUDA);return 'manter'}
+  if(tem(t,['libras','vlibras','v libras'])){abrirLibras();return true}
+  if(tem(t,['sobre'])){dlg.showModal();return true}
+  if(painel.classList.contains('aberto'))for(const [k,p] of Object.entries(ABA_PAL))if(tem(t,p)){selEpi(k);return true}
+  for(const [k,p] of Object.entries(EPI_PAL))if(tem(t,p)){irPara('epi');abrirEPI(k);return true}
+  for(const [k,p] of Object.entries(AREA_PAL))if(tem(t,p)){irPara('treinamentos');abrirArea(k);return true}
+  for(const k of ['admissional','periodico'])if(tem(t,[k])){irPara('treinamentos');selTr(k);return true}
+  for(const [k,p] of Object.entries(PAG_PAL))if(tem(t,p)){irPara(k);return true}
+  return false;
+}
+//CMD-FIM
+function comando(alts){
+  for(const bruto of alts){const r=executar(norm(bruto));
+    if(r){st('Entendi: “'+bruto.trim()+'”.');if(r!=='manter')vozAbrir(false);return}}
+  st('Não entendi “'+alts[0].trim()+'”. Diga, por exemplo: “abrir EPIs”.');
+}
+function ouvirVoz(cb,say){
+  say=say||(t=>st(t));
+  if(!SR){say('O comando por voz não funciona neste navegador. Use o Chrome ou o Edge.');return}
+  if(ouvindo){ouvindo.abort();return}
+  pararFala(true);const r=new SR();r.lang='pt-BR';r.interimResults=false;r.maxAlternatives=4;
+  r.onstart=()=>{ouvindo=r;ui();say('Ouvindo… fale agora.')};
+  r.onresult=e=>cb([...e.results[0]].map(a=>a.transcript));
+  r.onerror=e=>{const m={'not-allowed':'Permita o uso do microfone no navegador.','service-not-allowed':'Permita o uso do microfone no navegador.','no-speech':'Não ouvi nada. Toque e fale novamente.','audio-capture':'Nenhum microfone foi encontrado.','network':'O reconhecimento de voz precisa de internet.'};if(e.error!=='aborted')say(m[e.error]||'Não foi possível ouvir. Tente novamente.')};
+  r.onend=()=>{ouvindo=null;ui()};
+  try{r.start()}catch(e){ouvindo=null;ui();say('Não foi possível iniciar o microfone.')}
+}
+
+// --- ligações ---
+vozFab.addEventListener('click',()=>vozAbrir(!vozAberta()));
+$('vozX').addEventListener('click',()=>{vozAbrir(false);vozFab.focus()});
+$('vozFalar').addEventListener('click',()=>ouvirVoz(comando));
+$('vozOuvir').addEventListener('click',()=>falando?pararFala():lerPagina());
+$('btnOuvirEpi').addEventListener('click',()=>falando?pararFala():lerPagina());
+document.querySelectorAll('.voz-chips button').forEach(b=>b.addEventListener('click',()=>comando([b.dataset.c])));
+document.addEventListener('click',e=>{if(vozAberta()&&!vozP.contains(e.target)&&!vozFab.contains(e.target))vozAbrir(false)});
+$('btnDitar').addEventListener('click',()=>{const say=t=>st(t,$('ditarSt'));
+  ouvirVoz(alts=>{const ta=$('supMsg');ta.value=(ta.value?ta.value.trimEnd()+' ':'')+alts[0];say('Texto adicionado. Toque em “Ditar por voz” para continuar.')},say)});
+
+// ===== LIBRAS (VLibras) e SIENNA sob demanda =====
+function abrirLibras(){
+  const b=document.querySelector('[vw-access-button]');
+  if(!window.VLibras||!b){st('O VLibras não carregou. Verifique a internet e recarregue a página.');return}
+  b.click();st('Assistente de Libras (VLibras) aberto.');
+}
+const siennaNos=[];let siennaVisivel=false;
+const ehNosso=n=>n.matches('script,style,link,dialog,main,header,footer,nav,aside,section,a.skip,[vw],[class*="vw"],[class*="vlibras"],[id*="vlibras"],.veu,.voz-toast')||!!n.closest('[vw]');
+new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{
+  if(n.nodeType===1&&!ehNosso(n)&&!siennaNos.includes(n)){siennaNos.push(n);if(!siennaVisivel)n.classList.add('sienna-oculto')}
+}))).observe(document.body,{childList:true});
+function siennaMostrar(on){
+  siennaVisivel=on;siennaNos.forEach(n=>n.classList.toggle('sienna-oculto',!on));
+  const b=$('btnSienna');b.setAttribute('aria-pressed',on);b.textContent=on?'Ocultar Sienna':'Abrir Sienna';
+  if(on)st('Toque no botão do Sienna para abrir as opções.');
+}
+$('btnSienna').addEventListener('click',()=>{
+  if(!siennaNos.length&&!siennaVisivel){st('O Sienna ainda está carregando ou não pôde ser carregado (precisa de internet).');return}
+  siennaMostrar(!siennaVisivel);aa(false);
+});
+$('vozLibras').addEventListener('click',()=>{abrirLibras();vozAbrir(false)});
+const t0=parseInt(ler('tam'),10);tamanho(isNaN(t0)?1:t0);contraste(ler('contraste')==='1');mostrar(location.hash.slice(1));
+</script>
+<script async src="https://vlibras.gov.br/app/vlibras-plugin.js" onload="try{new window.VLibras.Widget('https://vlibras.gov.br/app')}catch(e){}"></script>
+<!-- Sienna Accessibility (MIT): carrega junto, mas o botão fica OCULTO até o usuário tocar em "Abrir Sienna" no painel Aa. Precisa de internet. -->
+<script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+</body>
+</html>
